@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    overflow: hidden;
+}
+
+.container {
+    width: 300px;
+    height: 530px;
+    background-color: hsl(216, 50%, 16%);
+    margin: 140px auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.container .image-container {
+    width: 100%;
+    height: 275px;
+    border-radius: 10px;
+    background-image: url('images/image-equilibrium.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.container .image-container:hover {
+    cursor: pointer;
+}
+
+.container .image-container:active .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/icon-view.svg');
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+.container .content h3 {
+    color: #fff;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.container .content h3:hover {
+    cursor: pointer;
+}
+
+.container .content h3:active {
+    color:hsl(178, 100%, 50%);
+}
+
+.container .content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: hsl(215, 51%, 70%);
+}
+
+.content .nft-price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.content .nft-price .ethereum {
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    align-items: center;
+}
+
+.content .nft-price .ethereum svg {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.content .nft-price .timeleft {
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    align-items: center;
+}
+
+.content .nft-price .timeleft svg {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.content .divider {
+    height: 2px;
+    background-color: hsl(215, 32%, 27%);
+}
+
+.content .author {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.content .author img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.content .author p {
+    margin-top: 20px;
+}
+
+.content .author p span.name {
+    color: #fff;
+}
+
+.content .author p span.name:hover {
+    cursor: pointer;
+}
+
+.content .author p span.name:active {
+    color: hsl(178, 100%, 50%);
+}
